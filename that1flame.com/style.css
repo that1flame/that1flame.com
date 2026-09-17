@@ -28,7 +28,7 @@ h1 {
 	margin-bottom: 25px;
 	
 	/* Gradient thingies */
-	background: linear-gradient(90deg, #ff0000, #ffaa00, #ff0000);
+	background: linear-gradient(90deg, #ff3f3f, #f1ac23, #ff3f3f);
 	background-size: 200% auto;
 	color: white; /* Fallback for browsers that don't support background-clip */
 	background-clip: text;
@@ -67,14 +67,15 @@ strong {
 }
 
 body {
-	background-image: url(https://flame.nekoweb.org/graphics/orange_forest.jpg); /* ignore the watermark on this bg pls */
+	background-image: url(./graphics/lake_wallpaper.jpg); /* ignore the watermark on this bg pls */
 	/* These are used to make sure the background looks right regardless of window/display size. */
   	background-repeat: no-repeat;
+	background-position: center;
   	background-size: cover;
   	background-color: black;
   	
 	width: auto;
-	height: auto;
+	height: 100vh;
 }
 
 :root {
@@ -83,8 +84,8 @@ body {
 	--bg-color: rgb(21, 21, 21);
 	--main-color: rgb(212, 43, 43);
 	/* Borders */
-	--border-width: 2px;
-	--border-style: var(--border-width) solid grey;
+	--border-width: 3px;
+	--border-style: var(--border-width) solid rgba(21, 21, 21, 0.3);
 }
 
 /* Container for the whole page. Probably gonna need... */
@@ -101,11 +102,14 @@ body {
 	height: auto;
 	border: var(--border-style);
 	border-bottom: none;
-	background-color: var(--bg-color);
 	margin-top: 100px;
 	padding-bottom: 4px;
 	margin-left: auto;
 	margin-right: auto;
+
+	/* Set background to be glass-like transparent */
+	background-color: rgb(from var(--bg-color) r g b / .6);
+	backdrop-filter: blur(8px);
 }
 
 /* The primary content box. Right side of the screen. */
@@ -116,10 +120,13 @@ body {
 	height: auto;
 	width: 75%;
 	border: var(--border-style);
-	background-color: var(--bg-color);
 	padding-top: 10px;
 	padding-bottom: 25px;
 	padding: 20px;
+
+	/* Set background to be glass-like transparent */
+	background-color: rgb(from var(--bg-color) r g b / .6);
+	backdrop-filter: blur(8px);
 }
 
 /* The navbar. Holds subpage links and sits on the left. */
@@ -130,7 +137,10 @@ body {
 	width: 25%;
 	border: var(--border-style);
 	border-right: none;
-	background-color: var(--bg-color);
+
+	/* Set background to be glass-like transparent */
+	background-color: rgb(from var(--bg-color) r g b / 60%);
+	backdrop-filter: blur(8px);
 }
 
 .navbutton {
