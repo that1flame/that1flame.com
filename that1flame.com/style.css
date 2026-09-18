@@ -67,7 +67,7 @@ strong {
 }
 
 body {
-	background-image: url(./graphics/lake_wallpaper.jpg); /* ignore the watermark on this bg pls */
+	background-image: url(./graphics/pink_lake.jpg);
 	/* These are used to make sure the background looks right regardless of window/display size. */
   	background-repeat: no-repeat;
 	background-position: center;
