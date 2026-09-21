@@ -112,6 +112,10 @@ body {
 	--border-style: var(--border-width) solid rgba(21, 21, 21, 0.3);
 }
 
+* {
+	box-sizing: border-box;
+}
+
 /* Container for the whole page. Probably gonna need... */
 .container {
 	display: flex;
@@ -122,7 +126,7 @@ body {
 
 /* The box at the top of the page. Like a header/nav bar */
 .header {
-	width: calc(var(--site-width) - calc(2 * var(--border-width)));
+	width: var(--site-width);
 	height: auto;
 	border: var(--border-style);
 	border-bottom: none;
@@ -170,7 +174,7 @@ body {
 .navbutton {
 	display: block;
 	width: 100%;
-	height: 24px;
+	height: 40px;
 	border-left: 5px solid var(--main-color);
 	background-color: none;
 	color: white;
@@ -210,7 +214,7 @@ body {
 }
 
 #sitebutton {
-	height: 23px;
+	height: 60px;
 	color: black;
 	border-color: black;
 	resize: none;
@@ -250,7 +254,7 @@ body {
 	}
 
 	.content {
-		width: calc(100% - 40px);
+		width: 100%;
 	}
 
 	.navbar {
@@ -261,16 +265,9 @@ body {
 	}
 
 	.navbutton {
-		width: calc(50% - 5px);
-		height: 32px;
-		padding: 12px 0px 8px 0px;
-		font-size: 24px;
-	}
-
-	h2 {
-		font-size: 28px;
-	}
-	p {
+		width: 50%;
+		height: 42px;
+		padding: 8px 0px 8px 0px;
 		font-size: 20px;
 	}
 }
