@@ -1,10 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <!-- 
-Welcome to the source code, random internet user! I'm not sure why you'd be looking here, but here's something for you if you are.
-I like to leave comments for myself everywhere so I know what EVERYTHING does.. because I'm really forgetful.
-But that also means YOU can learn how some HTML lines work too! I hope you learn something by looking here <3  - Flame
-P.S. Comments with other names at the end are explanations from Nekoweb Discord members. Huge thanks to all of them!
+You aren't supposed to be here.
+If you are.. this is a testing site too see formatting without Nekoweb's SSI.
 -->
 <head>
 	<!-- Basically just tells site to use all known unicode -->
@@ -16,13 +14,25 @@ P.S. Comments with other names at the end are explanations from Nekoweb Discord 
 </head>
 <body>
 	<!-- The header. Either only my name or some sort of banner. -->
-	<!--# include file="innerParts/header.html" -->
+	<div class="header">
+        <h1>FlameVR</h1>
+		<p id="titleGlow">FlameVR</p>
+    </div>
 
 	<!-- This div contains all the content on the page. Simple.. I hope. -->
 	<div class="container">
 		<!-- The main content. Split into 2 columns -->
 		<!-- First, the navbar on the left. -->
-		<!--# include file="innerParts/navbar.html" -->
+		<div class="navbar">
+	        <h2 style="margin-bottom: 16px;"><u>NAVIGATION</u></h2>
+	        <a href="/" class="navbutton">Home</a> <!-- This is just index.html. Everything else has a dedicated html file -->
+	        <a href="/about" class="navbutton">About Me</a>
+	        <a href="/links" class="navbutton">Links</a>
+	        <a href="/projects" class="navbutton">Projects</a>
+	        <a href="/outlinks" class="navbutton">Outlinks</a>
+	        <a href="/guestbook" class="navbutton">Guestbook</a>
+	        <a href="/changelog" class="navbutton">Changelog</a>
+        </div>
 			
 		<!-- The primary content. Contains the actual text n stuff -->
 		<div class="content">
@@ -34,7 +44,7 @@ P.S. Comments with other names at the end are explanations from Nekoweb Discord 
 			<div class="divbreaker"></div>
 			<h3 style="margin-bottom: 0px">Fun Site Statistics (via Nekoweb):</h3>
 			<div class="divbreaker"></div>
-			<p>Views: <!--# views --><br>Followers: <!--# followers --></p>
+			<p>Views: Infinity lol<br>Followers: None fuck you</p>
 		</div>
 	</div>
 </body>

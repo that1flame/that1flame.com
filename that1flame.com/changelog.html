@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 	<!-- Basically just tells site to use all known unicode -->
-    <meta charset="UTF-8">
+    <meta charset="UTF-8" content="width=device-width, initial-scale=1">
     <!-- Imports the styles from style.css -->
     <link rel="stylesheet" href="style.css">
 	<!-- Button styles for this page -->
@@ -19,9 +19,19 @@
 		<!-- The main content. Split into 2 columns -->
 		<!-- First, the navbar on the left. -->
 		<!--# include file="innerParts/navbar.html" -->
+		<div class="navbar">
+			<h2 style="margin-bottom: 16px;"><u>NAVIGATION</u></h2>
+			<a href="/" class="navbutton">Home</a> <!-- This is just index.html. Everything else has a dedicated html file -->
+			<a href="/about" class="navbutton">About Me</a>
+			<a href="/links" class="navbutton">Links</a>
+			<a href="/projects" class="navbutton">Projects</a>
+			<a href="/outlinks" class="navbutton">Outlinks</a>
+			<a href="/guestbook" class="navbutton">Guestbook</a>
+			<a href="/changelog" class="navbutton">Changelog</a>
+		</div>
 			
 		<!-- The primary content. Contains the actual text n stuff -->
-		<div class="content">
+		<div class="content" style="gap: 20px;">
 			<p>This is the "Changelog" page. <i>Coming soon...</i></p>
             <div class="divbreaker"></div>
             <details>

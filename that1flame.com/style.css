@@ -3,6 +3,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Jersey+10&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap');
 
+@font-face {
+	font-family: "Daydream";
+	src: url(./graphics/Daydream\ DEMO.otf);
+}
+
 /* Set all text to use JetBrains Mono. Except the main header. */
 h2, h3, h4, h5, h6, p, li, summary {
 	font-family: "JetBrains Mono";
@@ -20,21 +25,20 @@ h2 {
 
 /* Set text sizes */
 h1 {
-	font-family: "Jersey 10";
-	font-size: 144px;
+	font-family: "Daydream";
+	font-size: 72px;
 	text-align: center;
-	line-height: 0.5;
-	margin-top: 35px;
-	margin-bottom: 25px;
+	margin-top: 10px;
+	margin-bottom: 10px;
 	
 	/* Gradient thingies */
-	background: linear-gradient(90deg, #ff3f3f, #f1ac23, #ff3f3f);
+	background: linear-gradient(90deg, #ff6961, #ffb347, #fdfd96, #77dd77, #aec6cf, #ceace6, #cb99c9, #ff6961);
 	background-size: 200% auto;
 	color: white; /* Fallback for browsers that don't support background-clip */
 	background-clip: text;
 	-webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    animation: gradient-flow 4s linear infinite;
+    animation: gradient-flow 6s linear infinite;
 }
 
 /* Animates the h1 gradient (thanks to codeshack.io) */
@@ -45,6 +49,25 @@ h1 {
   	100% {
     	background-position: 200% center;
   	}
+}
+
+#titleGlow {
+	font-family: "Daydream";
+	font-size: 72px;
+	position: absolute;
+	top: 2.5px;
+	width: calc(var(--site-width) - calc(2 * var(--border-width)));
+	text-align: center;
+
+	/* Gradient thingies */
+	background: linear-gradient(90deg, #ff6961, #ffb347, #fdfd96, #77dd77, #aec6cf, #ceace6, #cb99c9, #ff6961);
+	background-size: 200% auto;
+	color: white; /* Fallback for browsers that don't support background-clip */
+	background-clip: text;
+	-webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: gradient-flow 6s linear infinite;
+	filter: blur(20px);
 }
 
 h2 {
@@ -73,9 +96,10 @@ body {
 	background-position: center;
   	background-size: cover;
   	background-color: black;
+	background-attachment: fixed;
   	
 	width: auto;
-	height: 100vh;
+	height: 100%;
 }
 
 :root {
@@ -114,7 +138,7 @@ body {
 
 /* The primary content box. Right side of the screen. */
 .content {
-	display: flex;
+	display: flexbox;
 	flex-wrap: wrap;
 	justify-content: left;
 	height: auto;
@@ -217,6 +241,13 @@ body {
 	.header {
 		width: 100%;
 	}
+	h1 {
+		font-size: clamp(0%, 11vw, 72px);
+	}
+	#titleGlow {
+		font-size: clamp(0%, 11vw, 72px);
+		width: 100%;
+	}
 
 	.content {
 		width: calc(100% - 40px);
@@ -230,7 +261,16 @@ body {
 	}
 
 	.navbutton {
-		width: calc(33% - 5px);
-		padding: 8px 0px 8px 0px;
+		width: calc(50% - 5px);
+		height: 32px;
+		padding: 12px 0px 8px 0px;
+		font-size: 24px;
+	}
+
+	h2 {
+		font-size: 28px;
+	}
+	p {
+		font-size: 20px;
 	}
 }
