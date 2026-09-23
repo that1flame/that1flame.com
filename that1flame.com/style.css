@@ -213,6 +213,48 @@ body {
 	background-color: grey;
 }
 
+/* This section contains the different buttons on the "Projects" page */
+
+.activeproject {
+	width: 80%;
+	display: inline-block;
+	background-color: #505050;
+	border: 4px solid grey;
+	color: white;
+	font-family: 'JetBrains Mono';
+	font-size: 16px;
+	text-align: center;
+	text-decoration: none;
+	padding: 10px 0px 10px 0px;
+	margin: 0px 10% 16px 10%;
+	cursor: pointer;
+	transition-duration: 0.25s;
+}
+.activeproject:hover {
+	background-color: grey;
+}
+
+.inactiveproject {
+	width: 80%;
+	display: inline-block;
+	background-color: #505050;
+	border: 4px dashed grey;
+	color: white;
+	font-family: 'JetBrains Mono';
+	font-size: 16px;
+	text-align: center;
+	text-decoration: none;
+	padding: 10px 0px 10px 0px;
+	margin: 0px 10% 16px 10%;
+	cursor: pointer;
+	transition-duration: 0.25s;
+}
+.inactiveproject:hover {
+	background-color: grey;
+}
+
+/* End of this section */
+
 #sitebutton {
 	height: 60px;
 	color: black;
