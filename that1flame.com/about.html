@@ -1,11 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<!-- Basically just needed metadeta, don't worry about it. -->
+    <!-- Basically just needed metadeta, don't worry about it. -->
     <meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Imports the styles from style.css -->
+
+    <!-- Imports the styles from style.css & the tooltip dependencies -->
     <link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="https://unpkg.com/tippy.js@6/themes/translucent.css">
+	<link rel="stylesheet" href="https://unpkg.com/tippy.js@6/dist/border.css">
+
     <!-- What appears on the tab on the top of the browser (or side if you're weird) -->
     <title>Flame's Homepage</title>
 </head>
@@ -25,7 +29,7 @@
 			<div style="display: grid; width: 100%; grid-template-columns: auto auto;">
 				<img src="./graphics/pfp.JPG" height="150" width="auto" alt="PFP" id="pfp">
 				<div>
-					<h3 style="margin-top: 4px; font-size: clamp(1.2rem, 2vw, 1.45rem); text-align: center;">The internet's least favourite catboy.</h3>
+					<h3 style="margin-top: 4px; font-size: clamp(1.2rem, 2vw, 1.45rem); text-align: center;">The internet's <span id="tt1">least favourite</span> catboy.</h3>
 					<p style="margin-bottom: 0px; margin-top: 6px; text-align: center;"><strong>Name:</strong> Flame &nbsp;|&nbsp; <strong>Pronouns:</strong> He/They</p>
 					<p style="margin-bottom: 0px; margin-top: 6px; text-align: center;"><strong>Age:</strong> 17 &nbsp;|&nbsp; <strong>Country:</strong> United States</p>
 				</div>
@@ -64,5 +68,12 @@
 			</ul>
 		</div>
 	</div>
+
+	<!-- Import Tooltip dependencies -->
+	<script src="https://unpkg.com/@popperjs/core@2"></script>
+	<script src="https://unpkg.com/tippy.js@6"></script>
+
+	<!-- Import the actual tooltip script -->
+	<script src="tooltips.js"></script>
 </body>
 </html>

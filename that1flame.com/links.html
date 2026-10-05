@@ -1,11 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<!-- Basically just needed metadeta, don't worry about it. -->
+    <!-- Basically just needed metadeta, don't worry about it. -->
     <meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Imports the styles from style.css -->
+
+    <!-- Imports the styles from style.css & the tooltip dependencies -->
     <link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="https://unpkg.com/tippy.js@6/themes/translucent.css">
+	<link rel="stylesheet" href="https://unpkg.com/tippy.js@6/dist/border.css">
+
     <!-- What appears on the tab on the top of the browser (or side if you're weird) -->
     <title>Flame's Homepage</title>
 </head>
@@ -28,5 +32,12 @@
 			<a href="https://github.com/that1flame" class="linkbutton">GitHub</a>
 		</div>
 	</div>
+
+	<!-- Import Tooltip dependencies -->
+	<script src="https://unpkg.com/@popperjs/core@2"></script>
+	<script src="https://unpkg.com/tippy.js@6"></script>
+
+	<!-- Import the actual tooltip script -->
+	<script src="tooltips.js"></script>
 </body>
 </html>

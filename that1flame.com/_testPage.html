@@ -1,5 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
+<!-- 
+You aren't supposed to be here.
+If you are.. this is a testing site too see formatting without Nekoweb's SSI.
+-->
 <head>
     <!-- Basically just needed metadeta, don't worry about it. -->
     <meta charset="UTF-8">
@@ -15,17 +19,29 @@
 </head>
 <body>
 	<!-- The header. Either only my name or some sort of banner. -->
-	<!--# include file="innerParts/header.html" -->
+	<div class="header">
+        <h1>that1flame</h1>
+		<p id="titleGlow">that1flame</p>
+    </div>
 
 	<!-- This div contains all the content on the page. Simple.. I hope. -->
 	<div class="container">
 		<!-- The main content. Split into 2 columns -->
 		<!-- First, the navbar on the left. -->
-		<!--# include file="innerParts/navbar.html" -->
+		<div class="navbar">
+	        <h2 style="margin-bottom: 16px;"><u>NAVIGATION</u></h2>
+	        <a href="/" class="navbutton">Home</a> <!-- This is just index.html. Everything else has a dedicated html file -->
+	        <a href="/about" class="navbutton">About Me</a>
+	        <a href="/links" class="navbutton">Links</a>
+	        <a href="/projects" class="navbutton">Projects</a>
+	        <a href="/outlinks" class="navbutton">Outlinks</a>
+	        <a href="/guestbook" class="navbutton">Guestbook</a>
+        </div>
 			
 		<!-- The primary content. Contains the actual text n stuff -->
 		<div class="content" style="display: inline; align-items: center;">
 			<p style="text-align: center;">Solid = Active/Complete | Dashed = <span id="tt4">Abandoned/Incomplete</span></p>
+			<div class="divbreaker"></div>
 			<h3 style="text-align: center;">Web Games</h3>
 			<a href="https://that1flame.itch.io/milestone-incremental" class="inactiveproject">Milestone Incremental</a>
 			<h3 style="text-align: center;">VR Games</h3>

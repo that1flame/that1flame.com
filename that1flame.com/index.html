@@ -7,11 +7,15 @@ But that also means YOU can learn how some HTML lines work too! I hope you learn
 P.S. Comments with other names at the end are explanations from Nekoweb Discord members. Huge thanks to all of them!
 -->
 <head>
-	<!-- Basically just needed metadeta, don't worry about it. -->
+    <!-- Basically just needed metadeta, don't worry about it. -->
     <meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Imports the styles from style.css -->
+
+    <!-- Imports the styles from style.css & the tooltip dependencies -->
     <link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="https://unpkg.com/tippy.js@6/themes/translucent.css">
+	<link rel="stylesheet" href="https://unpkg.com/tippy.js@6/dist/border.css">
+
     <!-- What appears on the tab on the top of the browser (or side if you're weird) -->
     <title>Flame's Homepage</title>
 </head>
@@ -31,12 +35,20 @@ P.S. Comments with other names at the end are explanations from Nekoweb Discord 
 			<p>I'm <strong>Flame</strong>, typically seen as <i>'FlameVR'</i> or <i>'that1flame'</i> depending on the platform.</p>
 			<p>This is my "hub" on the internet, showcasing my various projects and other information about me. Updated somewhat regularly.	</p>
 			<p>If anything looks off here, it's becuase I'm new to HTML/CSS and this is my first website. If anything is REALLY off please let me know.</p>
-			<p>This site was made on Firefox on a 1920x1200 monitor, but should look fine on other displays.</p>	
+			<p>This site was made on Firefox on a 1920x1200 monitor, but should look fine on other displays.</p>
+			<p>P.S: Hover/Hold over text with a <span id="tt0">dashed underline</span> to see a tooltip!</p>
 			<div class="divbreaker"></div>
-			<h3 style="margin-bottom: 0px">Fun Site Statistics (via Nekoweb):</h3>
+			<h3 id="tt2" style="margin-bottom: 0px">Fun Site Statistics:</h3>
 			<div class="divbreaker"></div>
 			<p>Views: <!--# views --><br>Followers: <!--# followers --></p>
 		</div>
 	</div>
+
+	<!-- Import Tooltip dependencies -->
+	<script src="https://unpkg.com/@popperjs/core@2"></script>
+	<script src="https://unpkg.com/tippy.js@6"></script>
+
+	<!-- Import the actual tooltip script -->
+	<script src="tooltips.js"></script>
 </body>
 </html>
