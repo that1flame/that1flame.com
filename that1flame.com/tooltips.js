@@ -15,7 +15,3 @@ tippy("#tt2", {
 tippy("#tt3", {
     content: "Hotlinking allowed!"
 });
-
-tippy("#tt4", {
-    content: "Don't expect any updates for these, ever"
-});
